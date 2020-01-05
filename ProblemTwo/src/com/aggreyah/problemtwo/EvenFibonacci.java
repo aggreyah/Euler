@@ -1,9 +1,8 @@
 package com.aggreyah.problemtwo;
 
 public class EvenFibonacci {
+	
 	public static int fibonacci (int value) {
-		int firstFib = 1;
-		int secondFib = 2;
 		if (value == 1)
 			return 1;
 		else if (value == 2)
@@ -11,8 +10,6 @@ public class EvenFibonacci {
 		else
 			return fibonacci(value - 1) + fibonacci(value - 2) ;
 	}
-	
-	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,6 +23,6 @@ public class EvenFibonacci {
 				sum += currentFibValue;
 			i ++;
 		}
-		System.out.println("Current sum: " + sum);
+		System.out.println("Even sum: " + sum);
 	}
 }
